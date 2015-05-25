@@ -103,6 +103,15 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GTq-zl-DaJ"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5At-c6-A5y">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="21" y="144" width="219" height="31"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +121,7 @@
                                 <exclude reference="QEu-v0-WQv"/>
                                 <exclude reference="Oux-Mg-2tB"/>
                                 <exclude reference="lRt-qU-p4G"/>
+                                <exclude reference="5At-c6-A5y"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,11 +131,13 @@
                                 <include reference="QEu-v0-WQv"/>
                                 <include reference="Oux-Mg-2tB"/>
                                 <include reference="lRt-qU-p4G"/>
+                                <include reference="5At-c6-A5y"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="enterMessageText" destination="QEu-v0-WQv" id="Dd5-Zn-lVI"/>
+                        <outlet property="enterNameLabel" destination="5At-c6-A5y" id="2MW-Iz-NSk"/>
                         <outlet property="enterNameTextField" destination="hzr-zk-wbp" id="7fA-JR-QSz"/>
                         <outlet property="mailButton" destination="lRt-qU-p4G" id="rpZ-g7-w9Z"/>
                         <outlet property="messageLabel" destination="Oux-Mg-2tB" id="XHJ-Py-5uk"/>
